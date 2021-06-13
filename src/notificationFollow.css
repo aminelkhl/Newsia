@@ -1,0 +1,40 @@
+.followprofileimg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.notificationfollow {
+    background-color: rgb(225, 227, 235);
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2px 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.notiffollowlabel {
+    font-size: 16px ;
+    width: 100%;
+}
+
+.notificationfollowtop {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+.notiffollowusername {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 6px;
+}
+.notificationfollowbottom {
+    margin-bottom: 3px;
+    margin-left: 20%;
+}

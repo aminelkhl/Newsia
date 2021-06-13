@@ -1,0 +1,39 @@
+.likeprofileimg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.notificationlike {
+    background-color: rgb(235, 225, 225);
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2px 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.notiflikelabel {
+    font-size: 16px ;
+}
+
+.notificationliketop {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+.notiflikeusername {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 6px;
+}
+.notificationlikebottom {
+    margin-bottom: 3px;
+    margin-left: 20%;
+}

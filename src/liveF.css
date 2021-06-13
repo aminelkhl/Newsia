@@ -1,0 +1,47 @@
+.bouton {
+    margin-left: 25%;
+    font-size: 25px !important;
+    background-color: rgba(128, 21, 21, 1) !important;
+    border-radius: 999px !important;
+    
+}
+.cadre {
+    border-radius: 15px !important;
+}
+.livelabel {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.inputlivediv {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-left: 3px;
+    border-radius: 999px;
+    background-color: rgb(221, 213, 213);
+    margin-bottom: 8px;
+}
+.livelinkinput {
+    margin-left: 5px;
+    width: 100%;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(221, 213, 213);
+    border-radius: 999px;
+}
+.liveformbutton {
+    margin-top: 15px;
+    margin-left: 40%;
+    padding: 10px 15px;
+    border: none;
+    outline-width: 0;
+    background-color: rgba(128, 21, 21, 1) !important;
+    color: white;
+    border-radius: 15px;
+}
+.boutonlivediv {
+    width: 100%;
+}
+.livetype {
+    margin-left: 10px;
+    font-style: oblique, bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

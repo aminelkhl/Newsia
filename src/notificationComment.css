@@ -1,0 +1,40 @@
+.commentprofileimg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.notificationcomment {
+    background-color: rgb(225, 235, 231);
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2px 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.notifcommentlabel {
+    font-size: 16px ;
+    width: 100%;
+}
+
+.notificationcommenttop {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 15px;
+
+}
+.notifcommentusername {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 6px;
+}
+.notificationcommentbottom {
+    margin-bottom: 3px;
+    margin-left: 20%;
+}

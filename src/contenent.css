@@ -1,0 +1,96 @@
+.contenent {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0.68);
+    margin: 30px 0;
+}
+.contentwrapper {
+    padding: 10px;
+    width: 100%;
+
+}
+.contenttop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenttopleft{
+    display: flex;
+    align-items: center;
+}
+.contentprofileimg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contentusername {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.contentcenter {
+    margin: 20px 0;
+}
+.contentimg {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+.contentbottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentbottomcomment {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.likeicon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 28px !important;
+}
+.likescounter {
+    font-size: 15px;
+}
+.commentcounter {
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+    font-size: 15px;
+}
+.contentcomment {
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+}
+.comment_text {
+    flex: 11;
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+.commentsendB {
+    flex: 1;
+}
+.contentbottomlike {
+    padding-left: 10px;
+}
+.contenttext {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.commentsendB {
+    cursor: pointer;
+    color: rgb(170, 116, 116);
+}
+
+.likeicon {
+    color: rgba(128, 21, 21, 1);
+}

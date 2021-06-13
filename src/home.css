@@ -1,0 +1,11 @@
+.home_header {
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+.home_body{
+    display: flex;
+    position: sticky;
+    top: 0;
+
+}
