@@ -10,6 +10,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import { IconButton } from '@material-ui/core';
 import Parameters from './Parameters';
 import Pimg from "./assets/Pimage.JPG"
+import {Link} from 'react-router-dom';
 function Header() {
     return (
     <div className="header">
@@ -22,7 +23,7 @@ function Header() {
         </div>
         <div className="header__middle">
            <div className="header__option">
-                <HomeIcon  fontSize="large" />
+           <Link to="/Home/" className="homeB"><HomeIcon  fontSize="large" /></Link>
             </div>
             <div className="header__option">
                 <GTranslateIcon fontSize="large" />
@@ -36,8 +37,8 @@ function Header() {
         </div>
         <div className="header__right">
             <div className="header__profile">
-            <img src={Pimg} alt="" className="headerprofileimg" />
-                <h4>Amine </h4>
+            <a href="http://localhost:3000/profile" className="profileheader"><img src={Pimg} alt="" className="headerprofileimg" /></a>
+            <a href="http://localhost:3000/profile" className="profileheaderh4"><h4>Amine </h4></a>
             </div>
         </div>
         <IconButton>

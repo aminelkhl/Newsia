@@ -1,0 +1,8 @@
+.profileParameterContainer {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    align-items: center;
+    overflow-y: scroll;
+}

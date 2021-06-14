@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import "./Parameters.css";
 const Parameters = (props) => {
@@ -12,7 +13,7 @@ const Parameters = (props) => {
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem disabled>Amine LAKHAL</DropdownItem>
-        <DropdownItem>Parametres</DropdownItem>
+        <Link to="/Home/profileparams" className="parameters"> <DropdownItem to="/Home/profileparams" >Parametres</DropdownItem></Link>
         <DropdownItem>Deconnexion</DropdownItem>
         <DropdownItem divider />
       </DropdownMenu>

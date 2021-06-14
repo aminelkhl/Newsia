@@ -86,3 +86,12 @@
     margin-left: 10px;
     margin-top: 5px;
 }
+.homeB {
+    color: rgba(229, 229, 229, 1);
+}
+.profileheaderh4 {
+    color: rgba(229, 229, 229, 1);
+}
+.profileheaderh4:hover{
+    color: rgba(229, 229, 229, 1);
+}
