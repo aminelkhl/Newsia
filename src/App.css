@@ -1,11 +1,12 @@
 .app {
     background-color: rgba(255, 255, 255, 1);
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     
 
 }
 
-app__body {
+.app__body {
     display: flex;
 }
 

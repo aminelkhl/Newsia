@@ -14,12 +14,13 @@ const LiveF = (props) => {
         <Card className="cadre">
           <CardBody>
           <div className="liveform">
+            <form>
               <span className="livelabel">
                   Lien du passage en direct :
               </span>
               
               <div className="inputlivediv">
-              <input type="text" className="livelinkinput" placeholder="Lien ..."/>
+              <input type="text" className="livelinkinput" placeholder="Lien ..." required/>
               </div>
               
               <span className="livelabel">
@@ -33,9 +34,10 @@ const LiveF = (props) => {
               <span className="livetype">Audio</span>
               <br />
               <div className="boutonlivediv">
-            <button className="liveformbutton"> Confirmer </button>
+            {/*<button className="liveformbutton"> Confirmer </button>*/}
+            <input type="submit" className="liveformbutton" value="Confirmer"/>
             </div>
-
+            </form>
           </div>
           </CardBody>
         </Card>

@@ -1,0 +1,11 @@
+.bouton {
+    margin-left: 40%;
+    font-size: 40px !important;
+    background-color: rgba(128, 21, 21, 1) !important;
+    border-radius: 50% !important;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: center
+    ;
+    
+}

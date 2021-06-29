@@ -1,16 +1,15 @@
-import "./home.css"
+import "./HomeDiff.css"
 import Sidebar from './Sidebar';
 import Feed from './Feed';
-import FeedRec from './FeedRec';
 import Header from './Header';
-import Rightbar from './Rightbar.jsx';
+import RightbarDiff from './RightbarDiff.jsx';
 import ProfileParameter from './ProfileParameter.jsx'
 import { thisExpression } from "@babel/types";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
- function Home() {
-    return ( 
-    <BrowserRouter>
+export default function HomeDiff() {
+    return (
+        <BrowserRouter>
         <div className="home">
 
             <Header />
@@ -21,15 +20,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
             {/*<Route exact path="/Home/feed" component={Feed}/>*/}
             <Route  path="/Home/profileparams" exact component={ProfileParameter}/>
             <Route  path="/Home/" exact component={Feed}/>
+            <Route  path="/" exact component={Feed}/>
             {/*<Route exact path="/feed" component={ProfileParameter}/>*/}
             {/*<Feed/>*/}
             </Switch>
-            <Rightbar />
+            <RightbarDiff />
 
             </div>
         </div>
         </BrowserRouter>
     )
 }
-
-export default Home

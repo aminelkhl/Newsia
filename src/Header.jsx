@@ -10,8 +10,11 @@ import HomeIcon from '@material-ui/icons/Home';
 import { IconButton } from '@material-ui/core';
 import Parameters from './Parameters';
 import Pimg from "./assets/Pimage.JPG"
+import UserContext  from "./UserContext"
+import { useContext } from 'react';
 import {Link} from 'react-router-dom';
 function Header() {
+    const {user} = useContext(UserContext)
     return (
     <div className="header">
         <div className="header__left">
@@ -31,9 +34,14 @@ function Header() {
             <div className="header__option">
                 <LanguageIcon fontSize="large" />
             </div>
-            <div className="header__option">
-                <PersonAddIcon fontSize="large" />
-            </div>
+           
+                {   user?.user?.role_id === 7  &&
+                     <div className="header__option">
+                        <PersonAddIcon fontSize="large" />
+                    </div>
+                }
+                
+            
         </div>
         <div className="header__right">
             <div className="header__profile">

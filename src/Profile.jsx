@@ -6,6 +6,8 @@ import ProfileComp from './ProfileComp';
 
 
 export default function Profile() {
+    
+   
     return (
         <div className="profilecontainer">
             <div className="profileHeader">

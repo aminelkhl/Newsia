@@ -1,0 +1,61 @@
+.connectB {
+    border-radius: 15px !important;
+    padding: 15px 20px !important;
+    margin-right: 10px !important;
+    font-size: 1.8rem !important;
+    font-family: 'Rozha One', serif !important;
+    background: none !important;
+    color: cornsilk !important;
+    border: solid cornsilk !important;
+}
+.connectcontainer {
+    background-color: rgb(68, 11, 11);
+    opacity: 90%;
+    width: 30%;
+    height: 40%;
+    padding: 20px 40px;
+    border-radius: 17px;
+}
+.connectcontainer_top{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.exit {
+    color: cornsilk;
+    font-size: 2rem !important;
+}
+.usernamespan {
+    font-family: 'Rozha One', serif;
+    font-size: 1.4rem;
+}
+.passwordspan {
+    font-family: 'Rozha One', serif;
+    font-size: 1.4rem;
+}
+.username {
+    flex-direction: column;
+    display: flex;
+}
+.password {
+    flex-direction: column;
+    display: flex;
+}
+.usernameInput,.passwordInput {
+    border-radius: 7px;
+    height: 2rem;
+}
+.cnB{
+    margin: 30px 55%;
+    font-family:  'Rozha One', serif;
+    font-size: 2.2rem;
+    padding: 9px 9px;
+    border-radius: 15px;
+    color: rgb(68, 11, 11);
+
+
+}
+.boutoncont {
+    width: 100%;
+    
+}

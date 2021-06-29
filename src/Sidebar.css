@@ -90,3 +90,16 @@
 .sidebarusername {
     cursor: pointer;
 }
+.addCat {
+    border-radius: 50%;
+    background-color: rgba(128, 21, 21, 1);
+    color: wheat;
+    padding: 15px 15px !important;
+    font-size: large;
+    margin-left: 45%;
+}
+.sidebaraddcategorie {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

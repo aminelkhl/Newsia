@@ -1,0 +1,42 @@
+.incformintercontainer {
+    font-family: 'Rozha One', serif;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-left: 20px;
+   font-size: 1.2rem;
+
+}
+.nom, .prenom, .email, .username, .password, .sexe, .phone, .bday, .photo, .adress{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+}
+.prenominput, .emailinput, .nominput, .passwordinput, .phoneinput, .adressinput, .bddate, .pdp {
+    margin-left: 20px;
+    border-radius: 15px;
+    outline: none;
+}
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  
+}
+.submitb {
+    background-color: rgb(68, 11, 11);
+    padding: 9px 9px;
+    font-size: 2.2rem;
+    color:white;
+    border-radius: 15px;
+}
+
+.sexeinput {
+    margin-left: 15px;
+    margin-right: 3px;
+}
+.usernameinput {
+    border-radius: 15px;
+    outline: none;
+}

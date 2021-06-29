@@ -5,7 +5,7 @@ import Chips from './Chips';
 import TabNotifDiff from './TabNotifDiff';
 import mosaique from "./assets/mosaique.jpeg";
 import Pimg from "./assets/Pimage.JPG"
-import LiveF from './LiveF.jsx'
+import AddCategorie from './AddCategorie'
 
 
 export default function Sidebar() {
@@ -21,16 +21,17 @@ export default function Sidebar() {
                 <hr/>
 
             </div>
-            <div className="sidebarlive">
-                    <LiveF />
-                </div>
+          
             <div className="sidebar__bot">
                 
                 <div className="sidebar__bot__notifications">
-                    <TabNotifDiff />
-                    {/*<Chips />*/}
+                    {/*<TabNotifDiff />*/}
+                    <Chips />
+                    <div className="sidebaraddcategorie">
+                    <AddCategorie className="addCat"/>
+                    </div>
                     <hr className="sidebarFollowingHr" />
-                    {/*
+                   
                     <div className="sidebarFollowingContainer">
                     <ul className="sidebarFollowingList"></ul>
                         <li className="sidebarFollowing">
@@ -74,7 +75,7 @@ export default function Sidebar() {
                             <span className="sidebarFollowingName">MosaiqueFm</span>
                         </li>
                         </div>
-                    */}
+                    
 
                 </div>
 

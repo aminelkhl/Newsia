@@ -1,0 +1,80 @@
+.rightbarDiffcontainer {
+    position: sticky;
+    position: 0;
+    height: calc(100vh - 50px);
+    background-color: rgb(247,247,247);
+    padding: 0 10px;
+    flex: 3;  
+    align-items: center;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    overflow: hidden;
+    padding: 20px 20px;
+    overflow-y: scroll;
+}
+.rightbaravatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.rightbarDifftop {
+    display: flex;
+    align-items: center;
+}
+.rightbarDiffmiddle {
+    width: 100%;
+    margin:30px 30px;
+}
+.rightbarDiffbot{
+    margin: 20px 30px;
+}
+.boutoncont {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.subB {
+    margin-left: 30%;
+    padding: 10px 30px;
+    font-size: 25px !important;
+    color: white;
+    background-color: rgba(128, 21, 21, 1) !important;
+    border-radius: 999px !important;
+    
+}
+.titrespan {
+    font-size: large;
+}
+.articlespan {
+    font-size: large;
+}
+.dureespan {
+    font-size: large;
+    }
+.main {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.desc {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.inputtitle
+{
+    border-radius: 999px;
+    outline-width: 0;
+    border: none;
+    padding: 5px 5px;
+    margin-left: 10px;
+}
+.articleinput {
+    border-radius: 15px;
+    outline-width: 0;
+    border: none;
+    padding: 5px 5px;
+}
+.articlecontainer {
+    margin-top: 20px;
+}

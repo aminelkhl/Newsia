@@ -6,14 +6,14 @@ import image from './assets/1.jpg';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import SendIcon from '@material-ui/icons/Send';
 
-export default function Contenent() {
+export default function Contenent(props) {
     return (
         <div className="contenent">
             <div className="contentwrapper"> 
                 <div className="contenttop">
                     <div className="contenttopleft">
-                        <img src={Pimg} alt="" className="contentprofileimg" />
-                        <span className="contentusername">Lakhal Amine</span>
+                        <img src={"https://avatar.oxro.io/avatar.svg?name="+props.username.toUpperCase()+"&background=ff6b6b&caps=3&bold=true"} alt="" className="contentprofileimg" />
+                        <span className="contentusername">{props.username}</span>
                         <span className="contentdate">5 minutes</span>
                     </div>
                     <div className="contenttopright">

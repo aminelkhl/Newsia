@@ -1,0 +1,70 @@
+.logo {
+    height: 60px;
+    width: 180px;
+    margin-top: 8px;
+}
+.appbar {
+    background: none !important;
+   
+    
+}
+.toolbar {
+    justify-content: space-between !important;
+    width: 80% !important;
+    margin: 0 auto;
+}
+.icon {
+    color: cornsilk;
+    font-size: 4.5rem !important;
+}
+.recmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.title {
+    color: cornsilk;
+    font-family: 'Rozha One', serif;
+    font-size: 4.5rem;
+}
+.center {
+    text-align: center;
+}
+.colortext {
+    color: cornsilk;
+    border: solid rgba(128, 21, 21, 1);;
+    border-radius: 12px;
+    padding: 2px 0;
+    
+}
+.goDown {
+    color: cornsilk;
+    font-size: 4rem !important;
+}
+.downicon {
+    margin-top: 25px !important;
+}
+.insc {
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-right: 10px;
+    font-size: 1.8rem;
+    border: none;
+    font-family: 'Rozha One', serif;
+}
+.connect {
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-right: 10px;
+    font-size: 1.8rem;
+    font-family: 'Rozha One', serif;
+    background: none;
+    color: cornsilk;
+    border: solid cornsilk;
+}
+.connectReg {
+    margin-top: 15px;
+    display: flex;
+}
