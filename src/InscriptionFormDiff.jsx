@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import "./InscriptionFormDiff.css";
 import DatePicker from "react-datepicker";
+import UserContext from "./UserContext"
+import axios from "./axios-instance"
 
 
-export default function InscriptionFormDiff() {
+export default function InscriptionFormDiff(props) {
     const [startDate, setStartDate] = useState(new Date());
     const [firstname, setFirstName] = useState("");
     const [lastname, setlastname] = useState("");
@@ -19,12 +21,19 @@ export default function InscriptionFormDiff() {
     const [companyadress, setCompanyadress] = useState("");
     const [companyimmat, setCompanyimmat] = useState("");
     const [description, setDescription] = useState("");
+    
+    const {user:context} = useContext(UserContext)
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post("/approuve",{firstname,lastname,username,email,sexe,adress,password,phone,companyname,company_email,companyphone,companyadress,companyimmat,description,role_id:5},{headers:{"Authorization":"Bearer "+context.token}}).then(res => console.log(res)).catch(err => console.log(err))
+        props.close()
+    }
 
 
     return (
         <div className="inscdiff">
-            <form>
+            <form onSubmit={handleSubmit}>
         <div className="incformintercontainer">
             
                 <div className="prenom">

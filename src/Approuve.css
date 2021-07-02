@@ -1,0 +1,11 @@
+.accept {
+    color: green !important;
+    font-size: 3rem !important;
+}
+.deny {
+    color: red !important;
+    font-size: 3rem !important;
+}
+.tapprouve {
+    font-size: 1.2rem ;
+}

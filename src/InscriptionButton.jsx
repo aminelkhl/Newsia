@@ -34,7 +34,7 @@ export default function InscriptionButton() {
             <IconButton onClick={handleClose} className="exitB">
                 <ClearIcon  className="exit"/>
             </IconButton>
-            <InscriptionTab />
+            <InscriptionTab handleClose={handleClose} />
         </div>
       </Backdrop>
     </div>

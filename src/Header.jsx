@@ -11,13 +11,17 @@ import { IconButton } from '@material-ui/core';
 import Parameters from './Parameters';
 import Pimg from "./assets/Pimage.JPG"
 import UserContext  from "./UserContext"
-import { useContext } from 'react';
+import { useContext,useState } from 'react';
 import {Link} from 'react-router-dom';
 import FilterLangue from './FilterLangue.jsx';
 import FilterRegion from './FilterRegion.jsx';
+
+
 function Header(props) {
 
     const {user} = useContext(UserContext)
+    const [value,setValue]=useState
+    const [results,setResults] = useState([])
 
     return (
     <div className="header">
@@ -26,6 +30,7 @@ function Header(props) {
             <div className="header__input" > 
             <input type="text" placeholder="Recherche NEWSIA ..."/>  
             <SearchIcon />
+            
             </div>
         </div>
         <div className="header__middle">

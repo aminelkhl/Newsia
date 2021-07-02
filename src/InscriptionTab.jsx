@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function InscriptionTab() {
+export default function InscriptionTab(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -76,10 +76,10 @@ export default function InscriptionTab() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0} className="InterI">
-        <InscriptionFormInter />
+        <InscriptionFormInter close={props.handleClose} />
       </TabPanel>
       <TabPanel value={value} index={1} className="DiffI">
-        <InscriptionFormDiff />
+        <InscriptionFormDiff close={props.handleClose} />
       </TabPanel>
     </div>
   );

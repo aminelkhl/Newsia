@@ -11,6 +11,7 @@ import {useState,useEffect} from "react"
 import axios from "./axios-instance"
 import Recherche from './Recherche.jsx';
 import PrivateRoute from "./PrivateRoute";
+import Approuve from './Approuve.jsx'
 function App() {
   const [user , setUser] = useState({})
   const [loading , setLoading] = useState(true)
@@ -38,10 +39,12 @@ function App() {
       { !loading && 
       <UserContext.Provider value={{user,setUser,loading}}>
       <Switch>
-      
+        <PrivateRoute path="/approuve" exact component={Approuve}/>
         <PrivateRoute path="/profile/:id" exact component={Profile}/>
         <PrivateRoute path="/profile"  exact component={Profile}/>
         <PrivateRoute path="/Home/recherche" exact component={Home} />
+        <PrivateRoute path="/Home/profileparams" exact component={Home} />
+        
         <PrivateRoute  path="/Home" exact component={Home}/>
         <Route  path="/"  component={Reception}/>
       </Switch>

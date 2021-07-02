@@ -4,8 +4,9 @@ import PostSender from './PostSender';
 import Post from './Post';
 import Contenent from './Contenent';
 import UserContext from "./UserContext"
-import FilterListIcon from '@material-ui/icons/FilterList';
 import axios from "./axios-instance"
+import FilterListIcon from '@material-ui/icons/FilterList';
+
 import { Button } from 'bootstrap';
 
 export default function Feed(props) {
@@ -34,7 +35,7 @@ export default function Feed(props) {
     }
     useEffect(()=> {
         fetchContenent()
-    
+        
     },[])
 
     const filter = () => {
