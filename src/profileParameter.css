@@ -1,8 +1,13 @@
 .profileParameterContainer {
-    padding: 30px 30px;
+    padding: 70px 30px;
     display: flex;
     flex-direction: column;
     flex: 6;
     align-items: center;
     overflow-y: scroll;
+    font-family: 'Rozha One', serif;
+    font-size: 2rem;
+}
+.paramcont {
+    background-color: azure;
 }

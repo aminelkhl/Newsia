@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import "./Chips.css";
@@ -9,50 +9,83 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     flexWrap: 'wrap',
     '& > *': {
-      margin: theme.spacing(2),
+      margin: theme.spacing(1),
     },
   },
 }));
 
-export default function Chips() {
+export default function Chips(props) {
   const classes = useStyles();
+   
 
-  const handleDelete = () => {
-    console.info('You clicked the delete icon.');
-  };
+  
 
   const handleClick = () => {
-    console.info('You clicked the Chip.');
+    
   };
 
   return (
     <div className={classes.root}>
       <Chip
+        label="All"
+        onClick={(e) => props.addFilter("")}
+       
+      />
+      <Chip
         label="#Sport"
-        onClick={handleClick}
-        onDelete={handleDelete}
+        onClick={(e) => props.addFilter("sport".toUpperCase())}
+        
       />
       <Chip
         label="#Politique"
-        onClick={handleClick}
-        onDelete={handleDelete}
+        onClick={(e) => props.addFilter("politique".toUpperCase())}
+       
       />
       <Chip
-        label="#Finance"
-        onClick={handleClick}
-        onDelete={handleDelete}
+        label="#Medecine"
+        onClick={(e) => props.addFilter("Medecine".toUpperCase())}
+        
       />
       <Chip
         label="#Technologie"
-        onClick={handleClick}
-        onDelete={handleDelete}
+        onClick={(e) => props.addFilter("technologie".toUpperCase())}
+        
       />
       <Chip
         label="#Santé"
-        onClick={handleClick}
-        onDelete={handleDelete}
+        onClick={(e) => props.addFilter("santé".toUpperCase())}
+        
       />
-      
+      <Chip
+        label="#Economie"
+        onClick={(e) => props.addFilter("Economie".toUpperCase())}
+        
+      />
+      <Chip
+        label="#Biologie"
+        onClick={(e) => props.addFilter("Biologie".toUpperCase())}
+       
+      />
+      <Chip
+        label="#Astronomie"
+        onClick={(e) => props.addFilter("Astronomie".toUpperCase())}
+        
+      />
+      <Chip
+        label="#Cinema"
+        onClick={(e) => props.addFilter("Cinema".toUpperCase())}
+        
+      />
+      <Chip
+        label="#Art"
+        onClick={(e) => props.addFilter("Art".toUpperCase())}
+       
+      />
+      <Chip
+        label="#Culture"
+        onClick={(e) => props.addFilter("Culture".toUpperCase())}
+    
+      />
     </div>
   );
 }

@@ -3,13 +3,13 @@ import { Dropdown } from 'semantic-ui-react'
 
 
 const languageOptions = [
-
+    { key: 'all', text: 'Tout', value: 'all' },
   { key: 'Arabe', text: 'Arabe', value: 'Arabe' },
   { key: 'Anglais', text: 'Anglais', value: 'Anglais' },
   { key: 'Français', text: 'Français', value: 'Français' },
 ]
 
-const DropdownLanguage = props => (
+const FilterLangue = props => (
  <div className="categorie">
   <Dropdown
     button
@@ -20,9 +20,9 @@ const DropdownLanguage = props => (
     options={languageOptions}
     search
     text='Langue'
-    onChange={props.onChange}
+    onChange={(e,{value})=> props.addFilter(value)}
   />
   </div>
 )
 
-export default DropdownLanguage
+export default FilterLangue

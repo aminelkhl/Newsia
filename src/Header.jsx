@@ -13,8 +13,12 @@ import Pimg from "./assets/Pimage.JPG"
 import UserContext  from "./UserContext"
 import { useContext } from 'react';
 import {Link} from 'react-router-dom';
-function Header() {
+import FilterLangue from './FilterLangue.jsx';
+import FilterRegion from './FilterRegion.jsx';
+function Header(props) {
+
     const {user} = useContext(UserContext)
+
     return (
     <div className="header">
         <div className="header__left">
@@ -29,10 +33,10 @@ function Header() {
            <Link to="/Home/" className="homeB"><HomeIcon  fontSize="large" /></Link>
             </div>
             <div className="header__option">
-                <GTranslateIcon fontSize="large" />
+                <FilterRegion addFilter={props.addFilterRegion}/>
             </div>
             <div className="header__option">
-                <LanguageIcon fontSize="large" />
+                <FilterLangue addFilter={props.addFilterLangue}/>
             </div>
            
                 {   user?.user?.role_id === 7  &&
@@ -45,8 +49,8 @@ function Header() {
         </div>
         <div className="header__right">
             <div className="header__profile">
-            <a href="http://localhost:3000/profile" className="profileheader"><img src={Pimg} alt="" className="headerprofileimg" /></a>
-            <a href="http://localhost:3000/profile" className="profileheaderh4"><h4>Amine </h4></a>
+            <a href="http://localhost:3000/profile" className="profileheader"><img src={"https://avatar.oxro.io/avatar.svg?name="+user?.user?.username.toUpperCase()+"&background=457b9d&caps=3&bold=true"} alt="" className="headerprofileimg" /></a>
+            <a href="http://localhost:3000/profile" className="profileheaderh4"><h4 style={{marginLeft:"10px"}}>{user?.user?.username} </h4></a>
             </div>
         </div>
         <IconButton>

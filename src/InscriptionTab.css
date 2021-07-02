@@ -1,18 +1,22 @@
 .tabCont {
     background-color: rgb(68, 11, 11) !important;
+    
 }
 .tabLab {
     color: white !important;
+ 
 }
 .InterI {
     color: black !important;
     width: auto;
     height: auto;
     background-color: whitesmoke !important;
+    display: flex !important;
 }
 .DiffI {
     background-color: whitesmoke !important;
     color: black !important;
     width: auto;
     height: auto;
+
 }

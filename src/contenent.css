@@ -28,6 +28,7 @@
     font-size: 15px;
     font-weight: 500;
     margin: 0 10px;
+    cursor: pointer;
 }
 .contentcenter {
     margin: 20px 0;
@@ -70,13 +71,10 @@
     display: flex;
 }
 .comment_text {
-    flex: 11;
     border: none;
     background-color: transparent;
     outline-width: 0;
-}
-.commentsendB {
-    flex: 1;
+    width: 100px;
 }
 .contentbottomlike {
     padding-left: 10px;
@@ -89,8 +87,18 @@
 .commentsendB {
     cursor: pointer;
     color: rgb(170, 116, 116);
+    border-radius: 999px;
+    outline: none;
+    margin-left: 400px;
 }
 
 .likeicon {
     color: rgba(128, 21, 21, 1);
+    margin-left: 6px;
+}
+.categoriecont {
+    font-size: 1.8rem;
+}
+.titlecont {
+    font-size: 2rem;
 }

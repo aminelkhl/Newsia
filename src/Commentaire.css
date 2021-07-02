@@ -1,0 +1,18 @@
+.pdp {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.commentairecontainer {
+    display: flex;
+    background-color: rgb(218, 187, 187);
+    padding: 10px 10px;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0.68);
+    margin-bottom: 5px;
+}
+.text {
+    margin-left: 15px;
+}

@@ -2,12 +2,12 @@
 const personnes = [
     {
         nom: 'Amine LAKHAL' ,
-        desc: "aazeazeazzeaea" ,
+        desc: "Frontend" ,
         time: 1500,
     } ,
     {
         nom: 'Malek RIAHI' ,
-        desc: "mamammamamam" ,
+        desc: "Backend" ,
         time: 1500,
     },
 ];

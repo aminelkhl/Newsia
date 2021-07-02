@@ -79,7 +79,7 @@ export default function InscriptionFormInter() {
                 </div>
                 <div className="phone">
                     <label className="phonelabel">Telephone : </label>
-                    <input type="text" className="phoneinput"  value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Votre telephone" required />
+                    <input type="number" className="phoneinput"  value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Votre telephone" required />
                 </div>
                 <div className="bday">
                     <label className="bdlabel">Date de naissance : </label>

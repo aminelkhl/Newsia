@@ -2,6 +2,7 @@ import React from 'react'
 import { Dropdown } from 'semantic-ui-react'
 
 const languageOptions = [
+  { key: 'all', text: 'Tout', value: 'all' },
   { key: 'Afrique', text: 'Afrique', value: 'Afrique' },
   { key: 'Europe', text: 'Europe', value: 'Europe' },
   { key: 'Asie', text: 'Asie', value: 'Asie' },
@@ -10,7 +11,7 @@ const languageOptions = [
   { key: 'Moyen-Orient', text: 'Moyen-Orient', value: 'Moyen-Orient' },
 ]
 
-const DropdownRegion = ({onChange}) => (
+const FilterRegion = (props) => (
  <div className="categorie">
   <Dropdown
     button
@@ -21,9 +22,9 @@ const DropdownRegion = ({onChange}) => (
     options={languageOptions}
     search
     text='Region'
-    onChange={onChange}
+    onChange={(e,{value})=> props.addFilter(value)}
   />
   </div>
 )
 
-export default DropdownRegion
+export default FilterRegion

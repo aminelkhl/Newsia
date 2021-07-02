@@ -13,8 +13,8 @@ const Parameters = (props) => {
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem disabled>Amine LAKHAL</DropdownItem>
-        <Link to="/Home/profileparams" className="parameters"> <DropdownItem to="/Home/profileparams" >Parametres</DropdownItem></Link>
-        <DropdownItem>Deconnexion</DropdownItem>
+        <Link to="/Home/profileparams" className="parameters"> <DropdownItem  >Parametres</DropdownItem></Link>
+        <a href="/" className="deconnection" onClick={()=> localStorage.removeItem('token')}><DropdownItem>Deconnexion</DropdownItem></a>
         <DropdownItem divider />
       </DropdownMenu>
     </ButtonDropdown>
